@@ -27,7 +27,7 @@ public class BatchContextConfiguration {
 	}
 	
 	@Bean
-	public SimpleJobLauncher launcher() {
+	public SimpleJobLauncher idJobLauncher() {
 		SimpleJobLauncher l = new SimpleJobLauncher();
 		try {
 			l.setJobRepository(getJobRepository().getObject());
