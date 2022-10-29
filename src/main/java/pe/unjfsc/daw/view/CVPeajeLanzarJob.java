@@ -28,7 +28,7 @@ public class CVPeajeLanzarJob {
 
 		MOLOG.info("[DAW] ClassPathXmlApplicationContext {}", moContext);
 
-		JobLauncher jobLauncher = (JobLauncher) moContext.getBean("launcher");
+		JobLauncher jobLauncher = (JobLauncher) moContext.getBean("idJobLauncher");
 
 		MOLOG.info("[DAW] JobLauncher {}", jobLauncher);
 
